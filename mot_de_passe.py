@@ -1,3 +1,6 @@
+
+#hello
+
 mot_de_passe = ""
 
 while not mot_de_passe == "yo":
