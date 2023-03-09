@@ -3,7 +3,7 @@
 
 mot_de_passe = ""
 
-while not mot_de_passe == "superman":
+while not mot_de_passe == "supermanistheman":
     
     mot_de_passe = input("Quel est votre mot de passe ?")
     print("Le mot de passe renseigné est incorect !")
