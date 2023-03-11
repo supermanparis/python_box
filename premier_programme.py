@@ -10,6 +10,10 @@ def afficher_information_personne (nom,age):
         print("Vous êtes presque majeur.")
     elif age == 18:
         print("Vous êtes tout juste majeur.")
+    elif age > 60:
+        print("Vous êtes senior.")
+    elif age < 10:
+        print("Vous êtes enfant.")
     elif age >= 18:
         print("Vous êtes majeur.")
     else:
