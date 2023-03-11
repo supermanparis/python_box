@@ -8,7 +8,7 @@ def afficher_information_personne (nom,age):
 
     if age == 17:
         print("Vous êtes presque majeur.")
-    elif age >=12 and age <18:
+    elif age >=12 and age <18: # ou possible d 'ecrire :     12 <= age <18:
         print("Vous êtes adolescent.")
     elif age < 5:
         print("Vous êtes un bébé.")
