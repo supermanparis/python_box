@@ -4,7 +4,9 @@ def afficher_information_personne (nom,age):
     print("Vous vous appelez " + nom + ", vous avez " + str(age) + " ans")
     print("L'an prochain vous aurez " + str(age+1) + " ans")
 
-    if age >= 18:
+    condition = age >= 18 #test avec creation d'une variable et vérification if True
+
+    if condition: # equivaut a if condition is True
         print("Vous êtes majeur.")
     else:
         print("Vous êtes mineur.")
