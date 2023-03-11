@@ -1,3 +1,10 @@
+# definition de la fonction afficher information personne
+
+def afficher_information_personne (nom,age):
+    print("Vous vous appelez " + nom + ", vous avez " + str(age) + " ans")
+    print("L'an prochain vous aurez " + str(age+1) + " ans")
+
+
 # definition de la fonction demander nom
 
 def demander_nom():
@@ -35,11 +42,17 @@ nom2 = demander_nom()
 age1 = demander_age(nom1)
 age2 = demander_age(nom2)
 
+afficher_information_personne (nom1,age1)
+afficher_information_personne (nom2,age2)
 
+'''
 # Partie 3 : Afficher les infos
 print("Vous vous appelez " + nom1 + ", vous avez " + str(age1) + " ans")
 print("L'an prochain vous aurez " + str(age1+1) + " ans")
 
 print("Vous vous appelez " + nom2 + ", vous avez " + str(age2) + " ans")
 print("L'an prochain vous aurez " + str(age2+1) + " ans")
+
+'''
+
 
