@@ -9,6 +9,8 @@ def demander_infos():
     print(f"Vous avez {age} ans.") # ici utilisation d'une f string
 
     print("Vous vous appelez %s." %nom) # ici une autre façon
-    print(f"Vous avez %s" %age,"printemps.")
+    print("Vous avez %s" %age,"printemps.")
+    print("Vous vous appelez %s %s."%(nom, prenom)) # ici f string
+
 
 demander_infos()
