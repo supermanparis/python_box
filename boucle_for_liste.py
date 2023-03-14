@@ -1,6 +1,5 @@
-ma_liste = ["VA","YE","LE","HA","AB","AM","SA","AB","NA","FA","YA", 
-"SA", "GH", "AN", "IL", "TA", "LA", "BA", "IB", "AM"]
+ma_liste = ["VA","YE","DA","NA","AB","AM","SA","HA","NA","FA"]
 
 for i in ma_liste:
-    print(20*(i + " is happy!!!" ))
-
+    print(*(i + " is happy! :)"))
+    print(5*("Oui oui "+ i +" is happy! :)" ))
