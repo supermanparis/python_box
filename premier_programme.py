@@ -55,6 +55,7 @@ while nom == "":
     nom = input("Quel est votre nom ? ")
 '''
 
+
 # Partie 2 : Demander age + demander nom  avec l'APPEL des foncions demander_age() et demander_nom() et la definition des variables
 nom1 = demander_nom()
 nom2 = demander_nom()
@@ -63,6 +64,14 @@ age2 = demander_age(nom2)
 
 afficher_information_personne (nom1,age1)
 afficher_information_personne (nom2,age2)
+
+
+# utilisation d'une boucle for pour generer le nom d'une personne
+
+for i in range(0,3):
+    nom = "prenom"+ str(i+1) # ici on genere l1 nom avec une concatenation de prenom + str(i+1) pour commencer à"prenom1" sinon "prenomO"
+    age = demander_age(nom) # ici on va faire appel a la fonction demander(age) et demander l'age de la variabel générée au dessus :nom
+    afficher_information_personne(nom, age) # ici on va faaire appel a la fonction avec pour paramametre le nom et l'age générés au dessus.
 
 '''
 # Partie 3 : Afficher les infos
