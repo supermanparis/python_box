@@ -1,6 +1,6 @@
 # definition de la fonction afficher information personne
 
-def afficher_information_personne (nom,age):
+def afficher_information_personne (nom,age,taille=0):
     print("Vous vous appelez " + nom + ", vous avez " + str(age) + " ans")
     print("L'an prochain vous aurez " + str(age+1) + " ans")
 
@@ -23,6 +23,13 @@ def afficher_information_personne (nom,age):
     else:
         print("Vous êtes mineur.")
 
+    #taille = 1.75
+    # print(type(taille))
+    if not  taille ==0:
+        print ("Votre taille est de : " + str(taille)+ " m.")
+
+    
+
 
 # definition de la fonction demander nom
 
@@ -31,6 +38,14 @@ def demander_nom():
     while reponse_nom =="":
         reponse_nom = input("quel est votre nom? ")
     return reponse_nom
+    
+# definition de la fonction demander taille
+
+def demander_taille():
+    reponse_taille = ""
+    while reponse_taille =="":
+        reponse_taille = input("quel est votre taille? ")
+    return reponse_taille
     
 
 
@@ -61,9 +76,11 @@ nom1 = demander_nom()
 nom2 = demander_nom()
 age1 = demander_age(nom1)
 age2 = demander_age(nom2)
+taille1 = demander_taille()
+taille2 = demander_taille()
 
-afficher_information_personne (nom1,age1)
-afficher_information_personne (nom2,age2)
+afficher_information_personne (nom1,age1,taille1)
+afficher_information_personne (nom2,age2,taille2)
 
 
 # utilisation d'une boucle for pour generer le nom d'une personne
@@ -82,7 +99,8 @@ NB_PERSONNES = 5
 for i in range(0,NB_PERSONNES):
     nom = "prenom"+ str(i+1) # ici on genere l1 nom avec une concatenation de prenom + str(i+1) pour commencer à"prenom1" sinon "prenomO"
     age = demander_age(nom) # ici on va faire appel a la fonction demander(age) et demander l'age de la variabel générée au dessus :nom
-    afficher_information_personne(nom, age) # ici on va faaire appel a la fonction avec pour paramametre le nom et l'age générés au dessus.
+    taille = demander_taille()
+    afficher_information_personne(nom, age, taille) # ici on va faaire appel a la fonction avec pour paramametre le nom et l'age générés au dessus.
 
 
 
