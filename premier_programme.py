@@ -73,6 +73,20 @@ for i in range(0,3):
     age = demander_age(nom) # ici on va faire appel a la fonction demander(age) et demander l'age de la variabel générée au dessus :nom
     afficher_information_personne(nom, age) # ici on va faaire appel a la fonction avec pour paramametre le nom et l'age générés au dessus.
 
+
+# pour améliorer la lisibilité de notre code on peut utlisier une constante (convention où l'on ecrit une variable en majuscule)
+# par convention une constante n'est jamais modifiée
+
+NB_PERSONNES = 5
+
+for i in range(0,NB_PERSONNES):
+    nom = "prenom"+ str(i+1) # ici on genere l1 nom avec une concatenation de prenom + str(i+1) pour commencer à"prenom1" sinon "prenomO"
+    age = demander_age(nom) # ici on va faire appel a la fonction demander(age) et demander l'age de la variabel générée au dessus :nom
+    afficher_information_personne(nom, age) # ici on va faaire appel a la fonction avec pour paramametre le nom et l'age générés au dessus.
+
+
+
+
 '''
 # Partie 3 : Afficher les infos
 print("Vous vous appelez " + nom1 + ", vous avez " + str(age1) + " ans")
