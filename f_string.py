@@ -12,5 +12,13 @@ def demander_infos():
     print("Vous avez %s" %age,"printemps.")
     print("Vous vous appelez %s %s."%(nom, prenom)) # ici f string
 
+    print("""
+    Vous 
+                mettez 
+                        ce que 
+            vous voulez
+    
+    """) # ici exemple d'un print sur plusieurs lignes.
+
 
 demander_infos()
