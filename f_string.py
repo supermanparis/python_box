@@ -20,5 +20,7 @@ def demander_infos():
     
     """) # ici exemple d'un print sur plusieurs lignes.
 
+    print ("hello", 20, 1.80, True) # ici test pour print sans concatenation maisavec une virgule.
+
 
 demander_infos()
